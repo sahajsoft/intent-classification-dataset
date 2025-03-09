@@ -1,0 +1,371 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - how's everything
+    - how are things going
+    - hiya!
+    - what's up
+    - greetings to you
+    - good evening
+    - yo
+    - ai, how are you feeling
+    - how is the ai doing
+    - ai, how are you doing
+    - have you been good
+    - is everything ok with you
+    - how have you been
+    - are you doing ok
+    - how are you
+    - how's life
+    - what's going on
+    - how's it going with you
+    - how are you today
+    - can you tell me how you're doing today
+    - how are you this fine day
+    - hey, how's it going
+    - hello, are you doing alright
+    - what's happening
+    - hey what's up
+    - howdy, what's new
+    - how are things going for you
+    - what do you feel like doing
+    - hey how's it hanging
+    - how is life treating you
+    - are you okay right now
+    - are you doing okay
+    - how's it going right now
+    - ahoy hoy
+    - how is everything with you
+    - how have you been doing
+    - it's nice to see you
+    - how is it going
+    - how are things
+    - are you doing well
+    - Sup?
+    - Hey buddy!
+    - Long time no see!
+    - Hola!
+    - What’s cookin’?
+    - Howdy partner!
+    - Yo yo!
+    - Top of the morning to you!
+    - Hi there, friend!
+    - What's crackin’?
+    - How’s your day going?
+    - Great to see you!
+    - Hey, you around?
+    - What’s new?
+    - How’s everything been?
+    - How are we today?
+    - Pleasure to meet you!
+    - Hope you're having a good day!
+    - How’s your world?
+    - How goes it?
+    - How’s the vibe?
+    - Hey fam!
+    - What’s the latest?
+    - What's shaking?
+    - Hello again!
+    - Happy to see you!
+    - How’s the energy today?
+    - Hey, feeling good?
+    - What’s poppin’?
+    - All good?
+    - yo, i wanna talk
+    - i want to chat
+    - lets start
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - syonara, ai device!
+    - goodbye, helpful ai device!
+    - bye-bye
+    - goodbye, ai assistant
+    - glad we got to talk
+    - i'm glad i got to talk to you
+    - nice to speak with you
+    - this was a great conversation
+    - talk to you later
+    - tata for now
+    - i'm out of here
+    - that's all, bye
+    - see ya later
+    - adios ai
+    - it was great to see you again, see ya later!
+    - i had a pleasure talking to you, see you later
+    - nice talking again, bye
+    - i have to go but it was nice talking again!
+    - i am glad we got to talk again, see you soon
+    - sayonara
+    - catch you around
+    - good seeing you
+    - later, thanks for chatting
+    - adios
+    - bye!
+    - later!
+    - adios!
+    - until next time!
+    - farewell!
+    - it was enjoyable to chat with you
+    - i'm outta here!
+    - it was pleasant having a conversation with you
+    - bye now
+    - buhbye
+    - see you in a while
+    - see you around
+    - nice to see you again
+    - nice to see you
+    - talk later
+    - tootles
+    - peace out
+    - goodbye for now ai
+    - ai goodbye
+    - i'll talk to you later ai
+    - we'll talk later ai
+    - i have to go ai goodbye
+    - bye bye!
+    - see you later
+    - it was great to have this conversation with you
+    - it was nice to catch up with you
+    - it was enjoyable talking with you
+    - it was great chatting with you
+    - it was cool talking with you
+    - see you later alligator
+    - fairwell
+    - have a good one
+    - peace
+    - bye for now
+    - thanks, bye
+    - i have to get going
+    - talk to you later!
+    - i’ll be leaving now
+    - i’m leaving-goodbye!
+    - thanks for talking to me
+    - it was really nice to be able to chat with you
+    - it was good to talk to you today
+    - it was pleasant conversing with you
+    - great talk, take it easy
+    - see ya
+    - great chat, talk to you later
+    - goodbye to you
+    - i must say goodbye
+    - i'm saying goodbye now
+    - it is time to say goodbye
+    - i have to say goodbye
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yep
+    - that is affirmative
+    - what you just said is true
+    - that is not false
+    - that is a fact
+    - i agree with the truth of what you just said
+    - i believe what you just said is true
+    - that would be great
+    - that would be awesome
+    - that is totally true
+    - oh yes
+    - yes that is right
+    - that is a yes
+    - that seems true
+    - positive
+    - true
+    - very true
+    - that will be true
+    - that appears true
+    - that is true
+    - it is true
+    - that is right
+    - that statement was correct
+    - true is my response
+    - yes, that's affirmative
+    - yes, you got it
+    - absolutely!
+    - do that
+    - yeah, that's right
+    - of course
+    - that's the truth
+    - exactly right
+    - yes, that's accurate
+    - yes, that is a fact
+    - yes, that is correct
+    - yes, that's confirmed
+    - indeed
+    - that would be yes
+    - that would be true
+    - i believe that's true
+    - uh huh
+    - yep, that's true
+    - yes, that's it
+    - yes, that is right
+    - correct, it is affirmative
+    - the answer to that is a resounding yes
+    - i can confirm it is affirmative
+    - my response to that is yes
+    - i have to say affirmative on that one
+    - i would have to say yes as my answer
+    - the answer to that is affirmative
+    - that is true, yes
+    - it is definitely affirmative
+    - its a for sure true
+    - it's true
+    - absolutely correct
+    - confirm
+    - yes, i'd really like that alot
+    - agreed, that's valid
+    - affirmative, go ahead
+    - yes that's correct
+    - yeah, that's how it is
+    - You got that right
+    - That checks out
+    - 100% true
+    - No doubt about it
+    - I couldn't agree more
+    - That’s a solid yes
+    - Without a doubt
+    - That’s spot on
+    - You’re absolutely right
+    - That’s totally accurate
+    - Couldn’t have said it better
+    - Sure thing
+    - No question about it
+    - That’s exactly it
+    - I’d say so
+    - That’s the way it is
+    - Right on!
+    - Bingo!
+    - For sure
+    - That’s the truth right there
+    - That’s legit
+    - You nailed it
+    - No arguments here
+    - Couldn’t be more true
+    - 100% agreed
+    - Completely true
+    - No denying that
+    - That’s my answer too
+    - That sums it up perfectly
+    - That holds true
+
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - no, that's incorrect
+    - that's not true
+    - that is not true, it's false
+    - no way
+    - not really
+    - naw
+    - nay
+    - i must say no
+    - i think not
+    - that is actually false
+    - i gotta say no
+    - no thanks
+    - no is the answer
+    - i don't think so
+    - it's a no
+    - i think it is false
+    - not true
+    - that is not true
+    - not at all
+    - that turns out to be false
+    - no way!
+    - oh hell no, that'd be terrible!
+    - that's inaccurate
+    - that's not what i want!
+    - that's completely false
+    - that's incorrect!
+    - that's totally wrong!
+    - that's a hard no from me
+    - no don't do that!
+    - no that is not right
+    - false for sure
+    - that's definitely false
+    - nope, that's false
+    - no, that is not right
+    - no, that is inaccurate
+    - no, that can't be right
+    - that is untrue
+    - i disagree that is false
+    - what you just said is false
+    - that is erroneous
+    - no that's wrong
+    - that isn't the right answer
+    - the information is wrong
+    - that is not correct
+    - that is not right
+    - that is wrong
+    - i'll pass
+    - not that one
+    - that's not right, so no
+    - the answer is false
+    - no, that is not right at all
+    - that is overwhelmingly false
+    - that's not right it's false
+    - i say negative
+    - negative for sure
+    - nope
+    - no thank you
+    - that is not the case
+    - no that isn't the case
+    - no that isn't it
+    - no that isn't correct
+    - that would be "no
+    - you are wrong
+    - no that is wrong
+    - that is false
+    - negative
+    - what you just said is wrong
+    - that’s actually wrong
+    - that’s not correct
+    - that’s incorrect
+    - are you sure i don’t think that’s correct
+    - that'd be a no
+    - nada
+    - the answer is no
+    - i think that's false
+    - i believe that to be false
+    - it seems not
+    - that would be false
+    - never ever
+

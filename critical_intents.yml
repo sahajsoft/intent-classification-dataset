@@ -1,0 +1,551 @@
+version: "3.1"
+
+nlu:
+- intent: activate_card
+  examples: |
+    - How can I activate my credit card
+    - How to activate credit card
+    - I want to activate my debit card
+    - I want to start my credit card
+    - activate debit card
+    - activate
+    - I want to activate my credit card
+    - debit card activate
+    - I want to start my credit card
+    - How can I activate my credit card
+    - Is there a way to activate my card
+    - please guide me on activating card
+    - what is a way to start a card
+    - help me in starting my debit card
+    - I want to operationalise my credit card
+    - How can I turn on my new card?
+    - I need to activate my bank card.
+    - Can you activate my debit card for me?
+    - What are the steps to activate my credit card?
+    - How do I start using my new card?
+    - My card is not working; do I need to activate it?
+    - Please tell me how to enable my card.
+    - How to make my new card active?
+    - I just got my card. How do I activate it?
+    - Activate my card immediately.
+    - I need to get my card working.
+    - Help me enable my card.
+    - What should I do to activate my new credit card?
+    - How do I authorize my card for use?
+    - Please let me know how to start my card.
+    - How do I get my card ready for transactions?
+    - My new card is here; how do I start using it?
+    - Is there an online way to activate my card?
+    - Do I need to call someone to activate my card?
+    - How to activate my card using mobile banking?
+    - Can I activate my card via an ATM?
+    - I need to enable my credit card for shopping.
+    - What’s the easiest way to activate my card?
+    - Can I activate my debit card from the bank’s app?
+    - My credit card is not yet activated. How do I fix this?
+    - How do I switch my card from inactive to active?
+    - How do I enable my prepaid card?
+    - I received a new card. How do I activate it?
+    - I forgot to activate my card. Can you help?
+    - Does my card need activation before first use?
+    - What is the activation process for my new card?
+    - I need instructions to activate my debit card.
+    - My card is inactive. What should I do?
+    - How to validate my card for usage?
+    - I need to register and activate my credit card.
+    - Can I activate my card through customer care?
+    - My card arrived today. How do I activate it?
+    - Does my card work automatically, or do I need to activate it?
+    - I tried using my card, but it says inactive. How to fix this?
+    - How do I enable my card for online transactions?
+    - I just got my replacement card. How do I activate it?
+    - I want to reactivate my deactivated card.
+    - Is there a fee to activate my credit card?
+    - Do I need my PIN to activate my card?
+    - Can I activate my card without calling customer service?
+    - How do I complete my card activation?
+    - Can you walk me through the card activation process?
+    - I lost my activation instructions. What should I do?
+    - Can I activate my card via SMS?
+    - Do I need to visit a branch to activate my card?
+    - How do I confirm that my card is activated?
+    - How long does it take to activate a card?
+    - Can I activate multiple cards at once?
+    - I need to start my virtual debit card.
+    - How do I enable tap-to-pay on my card?
+    - How do I activate my international debit card?
+    - I just received a card replacement. What’s next?
+    - Is there a deadline to activate my new card?
+    - Do I need my old card to activate the new one?
+    - I accidentally blocked my card. How do I activate it again?
+    - Can I activate my card without my phone?
+    - My new card isn’t working. Do I need to activate it first?
+    - What happens if I don’t activate my credit card?
+    - Is my card automatically activated when I receive it?
+    - How do I check if my card is already active?
+    - Can I activate my card using a phone call?
+    - What is the customer support number for card activation?
+    - Can I activate my card on the bank’s website?
+    - Do I need to sign anything to activate my card?
+    - How do I activate a contactless debit card?
+    - Does my digital wallet require card activation?
+    - Is my PIN required for activation?
+    - How do I unlock a temporarily deactivated card?
+    - I activated my card, but it’s still not working. What should I do?
+    - How can I restart a frozen credit card?
+    - Can I activate my card without my registered mobile number?
+    - How do I enable international transactions on my card?
+    - Do I need to deposit money before activating my debit card?
+    - What documents are needed to activate my credit card?
+
+
+- intent: generate_pin
+  examples: |
+    - I want to generate pin for  my credit card
+    - Debit card pin generation
+    - I want to set my credit card pin
+    - I want to generate pin
+    - how to generate credit card pin
+    - generate credit card pin
+    - ATM card pin generation
+    - I want to generate credit card pin
+    - How to generate pin for credit card
+    - Credit card pin generation
+    - how do i change my pin for number for my abc bank account
+    - what do i need to do to change my abc bank account pin number
+    - i have no idea what the pin is for my checking account
+    - i cannot recall the pin for my savings account
+    - i forgot the pin number for my college fund account
+    - set up a new pin number on my college fund account and make it be 1234
+    - i want 1234 to be the new pin number for my joint account
+    - please change my checking account pin to 1234
+    - i need to set up a new pin number for my college fund account
+    - i want my savings account pin to be 1234 from now on
+    - please change my retirement account pin number to 1234
+    - my checking account needs a new pin number
+    - i seem to have lost the pin for my retirement account
+    - i would like to replace the pin number for my retirement account
+    - i'd like to change my pin number for my checking account
+    - i want a new pin for my savings account
+    - i'm afraid i've forgotten the pin for my 401k account
+    - i need help changing my pin
+    - is there a way to get my pin number
+    - i must change my pin number for my money market account
+    - i cannot remember what my pin is for my bank of america checking account
+    - i really need to change my pin number for my account
+    - i cannot remember what my pin is for my bank of america checking account this moment
+    - i want to change my pin number for my checking account
+    - i want to change my pin number for my account
+    - please go and change the pin on my bank of america account to be 1234
+    - i must change my pin number for my account
+    - go ahead and change the pin on my bank of america account to be 1234
+    - i got to change my pin number for my account
+    - i need to change my pin number for my savings account
+    - i wanna change my pin number for my credit acount
+    - please change the pin on my bank of america account to be 1234
+    - i really cannot remember what my pin is for my bank of america checking account
+    - i gotta change my pin number for my debit account
+    - i am unable to remember what my pin is for my bank of america checking account
+    - so it turns out i can't remember what my pin is for my bank of america checking account
+    - how do i change my pin number for my account, please
+    - how do i update my pin number for my account, please
+    - i would like to change the pin on my checking account, please
+    - i'd like to change the pin on my savings account, please
+    - change the pin on my capital one account to be 1234
+    - change the pin on my redwood credit union account to be 1234
+    - change the pin on my chase account to be 1234
+    - how do i update my pin number for my account
+    - i would like to change the pin on my savings account
+    - change the pin on my wells fargo account to be 1234
+    - change the pin on my bank of america account to be 1234
+    - i would like to change the pin on my checking account
+    - i would like to change the pin on my savings account, please
+    - how do i reset my pin number for my account, please
+    - please change pin to 1234 on my bank account trailing in 3829
+    - on account ending in 3838 change my pin to 1234
+    - change my pin to 1234 on account ending with digits 4994
+    - change the pin on my bank account first republic to 1234
+    - change pin to 1234 on account banner
+    - help me change my pin number
+    - can you tell me how i change my pin number
+    - tell me how to change my pin number
+    - help me out with changing this pin number
+    - can i change my pin number
+    - help me get my pin on my capitol one account changed to 3892
+    - how can i switch the pin on my wells fargo account to 9982
+    - i need a reminder for my pin number
+    - help me remember my pin number
+    - change the pin on my bofa account to 3892
+    - i need to reset my pin number
+    - can you reset my pin number
+    - can you change my 1st national account pin to 4892
+    - can you help me with my pin number
+    - please make the pin on my zion bank account to 3232
+    - can you tell me my password checking account
+    - please tell me my pin number for my synovus account
+    - what's my pin for my fidelity account
+    - i cant recall my pin number for my city first account
+    - i forgot my pin number for my northfield account
+
+
+- intent: unauthorised_transaction
+  examples: |
+    - I want to report a wrong transaction
+    - Amount deducted from account without my knowledge
+    - Unauthorised transaction
+    - Amount wrongly deducted from my account
+    - I want to report a fraud
+    - Fraud transaction happened from my account
+    - i'm afraid this charge on my account is fraud
+    - i think there's fraud on my account
+    - i think i have fraud on my account from walmart
+    - there's been some fraudulent activity on my card
+    - i'm pretty sure this charge from sam's club is fraudulent
+    - i'm pretty sure this charge is fraudulent
+    - i need to report some fraudulent card activity
+    - there are some questionable charges on my card
+    - i think there's a fraudulent transaction on my account
+    - there's a shady charge from comcast on my account
+    - my account has a fraudulent transaction i think
+    - can you help me with some fraudulent charges on my card
+    - i think i've been the victim of fraud
+    - i'd like to report a fraudulent charge from people's natural gas
+    - this costco charge looks fraudulent
+    - there's fraudulent transaction going on
+    - i may have a fraudulent transaction
+    - i suspect some suspicious activity
+    - there seems to be fraudulent activity
+    - i suspect fraudulent transaction
+    - i need to report fraudulent activity on my card
+    - i'm reporting fraudelent activity on my card
+    - there has been fraudulent activity on my card and i need to report it
+    - i need to make a report due to fraudulent activity on my card
+    - due to fraudulent activity on my card i need to make a report
+    - how do i report a fraudulent charge on my visa
+    - how do i report fraud on my discover card
+    - how do i let visa know about a charge i didn't make
+    - help me tell visa about fraud on my account
+    - how do i tell mastercard about a fraudulent charge
+    - i have activity on my bank of america card i don't recognize
+    - i think a thief used my card
+    - i have suspicious charges on my discovery card
+    - i believe there's fraud on my card
+    - i need to report fraudulent activity on my mastercard
+    - i think someone's using my visa card without my permission
+    - i have transactions on my card that aren't mine
+    - my card has purchases i don't recognize
+    - someone misused my card and put fraudulent transactions on it
+    - i have charges on my amex card i didn't make
+    - "disable my card account and contact company to report fraudulent activty
+    - "i need to report fraudulent activity to my card company
+    - "please contact my credit card company to report fraudulent activity on
+    - it looks like someone made an unauthorized amazon purchase on my account
+    - i think my chase account has been compromised and fraud committed
+    - i may have had fraud committed on my account
+    - i'm thinking someone may have used my card in a fraudulent way
+    - there is a fraudulent charge for paypal on my bank account
+    - i think the charge for uber on my account is fraudulent
+    - looks like someone made an unauthorized charge to nike on my account
+    - i think someone stole my card and used it
+    - i think someone made an illegal charge to my card
+    - my account is showing a charge to venmo that i did not make
+    - i gotta report fraudulent activity on my credit card
+    - so i made a fraudulent transaction
+    - i have a fraudulent transaction from wal mart on my account right now
+    - turns out i made a fraudulent transaction
+    - report fraudulent activity on my debit card
+    - i made a fraudulent transaction
+    - i have a fraudulent transaction from wal mart showing on my account
+    - i think i made a fraudulent transaction
+    - i have a fraudulent transaction from wal mart on my account
+    - i must report fraudulent activity on my debit
+    - i have a fraudulent transaction from red robin on my account
+    - report fraudulent activity on my credit card now
+    - i have a fraudulent transaction from fry's on my account
+    - i got to report fraudulent activity on my credit card
+    - i'm afraid there is a false transaction on my account
+    - i have detected fraudulent activity on my account
+    - i see a fraudulent transaction from netflix on my account
+    - i spotted a fraudulent transaction from microsoft on my account
+    - i see a suspicious transaction in my account history
+    - it seems someone conducted a fraudulent transaction on my account
+    - i need help investigating a suspicious transaction
+    - i need to report a fraudulent transaction from postmates on my account
+    - help me figure out where this fraudulent transaction from google came from on my account
+    - can you help me deal with this fraudulent transaction from verizon on my account
+    - i believe there are fraudulent charges on my card how can i report them
+    - i didn't make these purchases on my card; these are fraudulent charges i need to report them
+    - how can i report fraudulent charges on my card
+    - it seems that there's fraudulent activity on my card i'd like to file a report
+    - i want to report fraudulent activity on my card
+    - there is an unauthorized transaction on my bank of america checking
+    - i see a purchase on my chase checking that i did not make
+    - what steps do i take if there is a transaction that i do not recognize on my navy federal credit union account
+    - i need to talk to someone about a transaction that was not made by me on my chase account
+    - can you report credit card fraud for me
+    - discover card reporting fraud
+    - i need to know how to report fraud on my discover car
+    
+
+- intent: change_limit
+  examples: |
+    - I want to change the limit of my contactless transaction on my (credit/debit) card
+    - I want to change the limit of my e-statement on my (credit/debit) card
+    - How to change the limit of credit card
+    - I want to change the limit of my online transactions on my (credit/debit) card
+    - I want to change the limit of my (credit/debit) card
+    - I want to change the limit of my POS transaction on my (credit/debit) card
+    - Credit card limit change
+    - I want to decrease the limit of my credit card
+    - I want to change the limit of my international transaction on my (credit/debit) card
+    - Change limit of credit card
+    - I want to change the limit of my auto-debit on my (credit/debit) card
+    - I want to change the limit of my atm withdrawal on my (credit/debit) card
+    - I want to increase the limit of my credit card
+    - limit change
+    - can you see if i can get a higher limit on my discovery card
+    - can my credit limit on my discovery card go up
+    - may i have a higher limit on my mastercard
+    - can i get a higher credit limit on my amex card
+    - is there a way to get a larger limit on my bank of america card
+    - what's the possibility of getting a credit limit increase on my visa
+    - is it possible to increase my credit limit to 1000 dollars
+    - is it possible to have a higher limit on my visa
+    - can i get a higher limit on my american express card
+    - i'd like to increase my credit spending limit to 500 dollars
+    - am i allowed to increase the credit limit on my mastercard
+    - is it possible to get a credit limit increase to 3000
+    - can you increase my credit limit to $7,500
+    - can i raise my credit limit to $12,000
+    - tell me if i can get a higher limit on my visa
+    - can i get my credit limit increased to $15,000
+    - how do increase the credit limit on my visa card
+    - can i get a higher credit limit on my american express
+    - can i increase the credit limit for my usaa card
+    - can i increase the credit limit on my kohls card
+    - can i increase the credit limit for my navy federal card
+    - can i increase my credit limit to 500 dollars
+    - can i increase the credit limit on my target card
+    - can i increase the credit limit for my bank of the west card
+    - can i increase my credit limit to 700 dollars
+    - can i increase the credit limit on my maurices card
+    - can i increase the credit limit on my old navy card
+    - can i increase my credit limit to 800 dollars
+    - can i increase my credit limit to 1200 dollars
+    - can i increase the credit limit for my chase card
+    - can i increase the credit limit for my bank of america card
+    - can i increase my credit limit to 1100 dollars
+    - can i increase the credit limit on my walmart card
+    - can you increase my credit limit to one thousand dollars
+    - can my credit limit be increased to one thousand dollars
+    - tell me if my credit limit can be increased to one thousand dollars
+    - please see if you can increase my credit limit to one thousand dollars
+    - i want to increase my credit limit to $1000, if possible
+    - can i increase thencrdeit limit for my chase visa card
+    - can i increase the credit limit for my american express card
+    - can i increase the credit limit for my western union credit card
+    - can i increase the credit limit for my wells fargo credit card
+    - can i increase the credit limit for my visa platinum card
+    - is it possible to increase the credit limit for my discover card
+    - is it possible to raise the credit limit for my discover card
+    - can i raise the credit limit for my discover card
+    - will they let me up my credit limit to $1000
+    - will i be able to increase my credit limit to $1000
+    - can i up my credit limit to $1000
+    - am i allowed to increase my credit limit to $1000
+    - is it possible to increase my credit limit to $1000
+    - can i get more money on my discover card
+    - help increasing credit on discover card
+   
+
+- intent: block
+  examples: |
+    - I want to block my UPIp
+    - I have to block my credit card
+    - I wanted to block my mobile banking
+    - How can I block my credit card?
+    - I want to block my card
+    - block mobile banking
+    - can you please help me assist in blocking my card
+    - what are the ways to block a card
+    - i want to block my card for everyone
+    - make my card non operational
+    - I want to block my debit card
+    - I wannna to block mobile banking
+    - need to block my ATM card.
+    - Disable my credit card immediately.
+    - How do I stop all online banking transactions?
+    - I want to restrict my debit card usage.
+    - Please freeze my bank account temporarily.
+    - Urgent! Stop my UPI transactions.
+    - I want to deactivate my internet banking services.
+    - Lock my credit card right now.
+    - I lost my wallet, block all my cards.
+    - Stop my net banking access immediately.
+    - How can I put my card on hold?
+    - I want to deactivate my bank account temporarily.
+    - Can you disable my UPI ID?
+    - I want to suspend my mobile banking services.
+    - Block all banking transactions from my account.
+    - My card is stolen, please block it.
+    - I need to prevent unauthorized card usage.
+    - I suspect fraud, please freeze my account.
+    - Secure my internet banking by blocking access.
+    - Stop all transactions on my credit card.
+    - How do I block my lost debit card?
+    - I want to restrict all digital payments.
+    - Please deactivate my banking login.
+    - Disable my card for online purchases.
+    - How do I make my UPI ID inactive?
+    - I don't want my card to be used, block it.
+    - My UPI account was hacked, block it now.
+    - Make my net banking temporarily inaccessible.
+    - Freeze my credit card due to suspicious activity.
+    - How can I stop my debit card transactions?
+    - I need to block my savings account temporarily.
+    - Lock my card for international transactions.
+    - Block my mobile wallet services.
+    - I lost my phone, disable my UPI immediately.
+    - How do I stop auto-debit payments?
+    - I wish to disable my bank account access.
+    - Can you put my card on a security hold?
+    - Urgent! Restrict my banking transactions.
+    - I need to block my UPI PIN.
+    - How can I suspend my online banking?
+    - Please stop all ATM withdrawals from my account.
+    - I want to deactivate my credit card permanently.
+    - Restrict my bank account for security reasons.
+    - How can I make my card temporarily inactive?
+    - Please block my linked debit card.
+    - Prevent my bank account from being accessed online.
+    - I want to disable my UPI account permanently.
+    - My phone got stolen, block my net banking.
+    - How do I freeze my banking transactions?
+    - Stop all contactless payments from my card.
+    - I need to disable my UPI-linked phone number.
+    - Block all payments from my bank account.
+    - Can I deactivate my card for a few days?
+    - I need to restrict my internet banking temporarily.
+    - My card details were leaked, please block it.
+    - I lost access to my banking app, block it.
+    - Disable my debit card from making payments.
+    - Can you pause my credit card usage?
+    - Urgent! I need to suspend my online transactions.
+    - My UPI transactions are not safe, block them.
+    - I want to make my debit card non-usable.
+    - Stop all net banking transactions on my account.
+    - My card has been misused, block it right away.
+    - Please deactivate my banking credentials.
+    - How do I stop my UPI from working?
+    - I need to put a hold on my banking transactions.
+    - Stop all card-based transactions from my account.
+    - How do I block my account from digital payments?
+    - Can I temporarily lock my card?
+    - I need to stop all auto-debits from my account.
+    - I want to make my mobile banking inaccessible.
+    - Please suspend my debit card transactions.
+    - How do I prevent my account from being used?
+    - I lost my banking device, block my access.
+    - Urgent! Disable my UPI payments.
+    - How can I stop my bank account from being used?
+    - I need to block all financial transactions.
+    - Block my credit card for international payments.
+    - Restrict my UPI payments for security reasons.
+    - I want to lock my digital wallet.
+    - Disable my banking services for now.
+    - Stop all auto-payments linked to my card.
+    - Freeze my card for a few days.
+    - My phone got hacked, deactivate my banking access.
+    - I don’t want anyone using my card, block it now.
+    
+
+- intent: lost
+  examples: |
+    - I misplaced my credit card
+    - I want to report my lost debit card
+    - I want to report my lost debit card
+    - My card is lost
+    - I cannot find my credit card
+    - I lost my credit card
+    - I lost my debit card
+    - I lost my credit card
+    - I lost my debit card
+    - Debit card is missing
+    - My card is lost
+    - I cannot find my credit card
+    - Credit card is missing
+    - Debit card is missing
+    - I misplaced my credit card
+    - immediately the credit card company must be told that i lost my card from them
+    - i lost my debit card and need it reported as lost
+    - help me report my lost mastercard
+    - i lost my card, how should i report that
+    - what should i do if my card is lost
+    - report my lost visa card
+    - i lost my amex and need to report it
+    - i have to report a lost visa card
+    - walk me through the process of reporting a lost card
+    - what can i do if my card is lost
+    - my card is lost what do i do
+    - my card is lost how do i report it
+    - what must i do to report my card lost
+    - can you help me report my lost card please
+    - my card is lost please report it
+    - i need to report that my card has been lost
+    - i want you to repord my card as lost
+    - i lost my card, what do i do
+    - i need to report that my card is lost
+    - i need to replace my lost card
+    - what do i do if i lost my card
+    - how do i report a lost card
+    - someone stole my discover card
+    - my american saving bank was stolen
+    - someone stole my discover credit card
+    - someone stole my capital one credit card
+    - my capital one credit card was stolen
+    - my card is to be reported stolen
+    - my stolen card needs to be reported
+    - i need to report my stolen card
+    - i have to report my card as stolen
+    - i am obliged to report my stolen card
+    - i need to report my card as stolen, please
+    - i can't find my mastercard and i want to report it as lost, please
+    - i can't find my visa card and i want to report it as lost
+    - i can't find my mastercard and i want to report it as lost
+    - i would like to report my card as stolen
+    - i can't find my visa card and i want to report it as lost, please
+    - i'd like to report my card as stolen
+    - i'd like to report my card as stolen, please
+    - i can't locate my mastercard and i want to report it as lost, please
+    - i would like to report my card as stolen, please
+    - i need to report a stolen card, please
+    - i think my card is stolen and needs to be reported
+    - i would like to report a stolen card
+    - is there anyway, i can report my card being stolen
+    - my card is stolen, i need to report it
+    - my new debit card is lost and i need to report it
+    - my bronze card is missing i would like to report it as lost
+    - i lost my purple credit card and need to report it
+    - i lost my silicon valley card
+    - i lost my commerce card and need to report it as lost
+    - someone stole my card
+    - i need help since someone stole my card
+    - my credit card was stolen
+    - i need to report credit card theft
+    - who do i report card theft to
+    - i want to report my card as lost
+    - i need to report a lost card
+    - what do i do to report a lost card
+    - how do i report my lost card
+    - help me report a lost card
+    - can you report my lost discover card
+    - report my card as lost
+    - i lost my card how do i report it
+    - i lost my discover card, i want to report it
+    - i want to report my discover card as lost
+    - i can't find my discover card, how do i report it
+    - i can't find my credit card and i want to report it as lost
+    - i can't find my insurance card and i want to report it as lost
+    - i can't find my student id card and i want to report it as lost
+    - i need to report my card as stolen, who do i tell
+    

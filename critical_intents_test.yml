@@ -1,0 +1,189 @@
+version: "3.1"
+
+nlu:
+- intent: activate_card
+  examples: |
+    - I want to activate my card
+    - I want to start my debit card
+    - I want to start my debit card
+    - How to activate credit card
+    - debit card activate
+    - How do I enable my new card?
+    - Can you help me activate my card?
+    - Start my card, please.
+    - What is the process to activate my credit card?
+    - How to turn on my debit card?
+    - I need to initiate my card usage.
+    - Activate my new credit card now.
+    - How do I make my card active?
+    - Please enable my debit card.
+    - I need to unlock my new card.
+    - Can I start using my card now?
+    - How do I register my card for activation?
+    - Make my card ready for transactions.
+    - I want to set up my credit card for use.
+    - Get my card up and running.
+    - Can my bank activate my card on my behalf?
+    - How do I enable auto-pay on my new card?
+    - Will I receive a confirmation after activating my card?
+    - Do I need to visit an ATM for activation?
+    - How can I activate my business credit card?
+    - My new card has a chip. Does it require activation?
+    - Can I activate my card by swiping it at a store?
+    - How do I set up my card’s security features after activation?
+    - Can I activate my credit card without a bank account?
+    - What are the activation steps for a virtual card?
+    - I need to activate my student debit card. How do I do that?
+
+
+- intent: generate_pin
+  examples: |
+    - is there a way to change my pin number for my savings account
+    - i need my pin number
+    - how do i get my pin number, i forgot mine
+    - help me change my pin number for my money market account
+    - how do i get a new pin
+    - tell me how i can get a new pin number
+    - tell me how to retrieve my pin number
+    - help me, i forgot my pin number
+    - what is the procedure for getting a new pin number
+    - how do i change my pin number for my payroll account
+    - change my pin number for my checking account
+    - change my amex account pin to 1234
+    - change my amex pin to 1234
+    - swap my amex pin to 1234
+    - switch my amex pin to 1234
+    - set my amex pin to 1234
+    - you need to change the pin on my bank of america account to be 1234
+    - i need you to change the pin on my bank of america account to be 1234
+    - i need to change my pin number for my account
+    - i'd like to change my pin number for my wells fargo account
+    - i would like to change my pin number for my chase account
+    - i need to change my pin number for my checking account
+    - i'd like to change my pin number for my savings account
+    - i forgot my pin number to my chase account
+    - can you help me remember my pin to my boa account
+
+
+- intent: unauthorised_transaction
+  examples: |
+    - i need to increase my credit limit
+    - change my credit limit, please
+    - help me change my credit limit
+    - what do i do to change my credit limit
+    - get my credit limit changed
+    - i want to change my credit limit
+    - please help me increase my mastercard credit card limit
+    - i need to increase my credit limit for my visa credit card, can you assist me
+    - i would like to increase my bank of america credit limit, can you help me
+    - is there a way to increase the credit limit on my american express card
+    - how can i increase my aa credit card limit
+    - would it be possible to increase my chase card's limit
+    - how do i raise the limit on my visa card
+    - how would i raise my credit spending by 250 dollars
+    - can i raise the limit to 500 dollars
+    - can i get a credit limit raise on my credit card
+    - how would i raise my credit spending by 2500 dollars
+    - would i be able to increase my available credit by 600 dollars
+    - i need a credit raise by 1000 dollars
+    - is there a way to raise my mastercard credit
+    - how would i go about raising my gold card limit
+    - please increase my credit limit to $9,000
+    - how do i request a credit limit increase on my visa
+    - send information about suspicious credit card activity
+    - please report information about activity on my credit card
+    - send fraudulent activity information
+    - please file a fraud report
+    - report fraud on my card
+    - i want to report fraudulent activity on my amex card, please
+    - i believe that there is some fraudulent activity on my capital one account
+    
+
+- intent: change_limit
+  examples: |
+    - i'd like to increase my credit limit up to four thousand
+    - can i increase my credit limit from 1000 to 2000 please
+    - is it possible to increase the limit on my visa
+    - should i increase my credit limitfor cardx
+    - can i have my credit limit changed
+    - credit limit change
+    - please change credit
+    - please change the credit limit
+    - i want my credit limit changed
+    - can i get a credit increase for my visa
+    - can i get a higher limit on my visa card
+    - can my limit be increased for my visa
+    - can you increase how much i can spend on my visa
+    - will you allow more spending on my visa
+    - is it possible to increase my visa card limit
+    - is the limit on my visa card able to be increased
+    - is there a way to increase the limit on my visa card
+    - am i able to increase the limit on my visa card
+    - how do i increase the limit on my visa card
+    - can you increase my credit limit
+    - can you change my credit limit
+    - can you change the limit on my credit please
+    - is it possible to get a new credit limit of $10,000
+    - is it possible to increase the credit limit on my mastercard
+   
+
+- intent: block
+  examples: |
+    - Block credit card
+    - Can I block my credit card
+    - Can you please block my card
+    - assist me in stopping my card
+    - i must block my card
+    - How do I disable my UPI transactions?
+    - Please block my net banking access.
+    - I need to stop my credit card immediately.
+    - Can you help me freeze my debit card?
+    - I lost my card, please block it now.
+    - Urgent! Block my mobile banking access.
+    - How can I deactivate my UPI?
+    - I suspect fraud, block my credit card ASAP.
+    - Stop all transactions on my debit card.
+    - I want to put my card on hold.
+    - Please disable my internet banking.
+    - I need to deactivate my UPI ID.
+    - Prevent any transactions on my account.
+    - Block my ATM card right away.
+    - I don't want my card to be used anymore.
+    - How do I lock my mobile banking?
+    - Secure my bank account by blocking my cards.
+    - Please make my card inactive.
+    - I lost my phone, disable my banking access.
+    - Need assistance in blocking my UPI payments.
+    
+
+- intent: lost
+  examples: |
+    - i can't seem to find my gold card and want it reported as lost
+    - i lost my chase bank card and want it labeled as lost
+    - can you report my td bank card as lost
+    - i misplaced my visa and need it marked as lost
+    - what do i do if my visa card got stolen
+    - what should i do when my visa card is stolen
+    - my visa card was stolen
+    - my visa card got stolen
+    - i think my visa card was stolen
+    - my visa has been stolen by someone
+    - someone stole my mastercade
+    - my visa was stolen
+    - my american express card needs to be reported as stolen
+    - my discover card has been stolen
+    - report lost card to discover company
+    - report discover card as lost
+    - how do i report a lost discover credit card
+    - where to report lost discover credit card
+    - report lost card
+    - report a lost card here
+    - please report my stolen card
+    - could you please help me, my card has been stolen and i need to report it
+    - my credit card has been stolen, please report it
+    - oh no, report my card, it's stolen
+    - i would like to have my card reported as stolen
+    - i need to report a card that's been lost but i dont know how
+    - how can i report a card that has been lost
+    - file a report for a lost american express card
+    

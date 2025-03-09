@@ -1,0 +1,116 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello, friend
+    - whats up with you
+    - hey there fellow
+    - ssup
+    - yo, hows it going
+    - are things going well for you
+    - ai how are you doing today
+    - how is my ai doing
+    - so how is everything
+    - how are you this day
+    - hi how is everything
+    - well hello
+    - just wanted to say hi
+    - why hello
+    - are you well
+    - hola
+    - good to see you
+    - how've you been feeling
+    - aloha
+    - are you feeling okay
+    - how do you feel
+    - bonjour
+    - greetings
+    - i want to talk to you
+    - heyo
+
+- intent: goodbye
+  examples: |
+    - i enjoyed talking to you
+    - thanks for talking
+    - it was good chatting
+    - it was nice chatting with you
+    - always nice to talk to you
+    - see you later, alligator
+    - good night
+    - it was nice to get in touch
+    - see you soon
+    - later gator!
+    - it was nice to talk it out with you
+    - it was nice to converse with you
+    - ill see you around
+    - take it easy!
+    - later gater
+    - it was nice to speak with you
+    - nice talk, talk to you later
+    - thanks for chatting, later
+    - cya later
+    - good bye my friend
+    - i need to go now
+    - see you again soon
+    - i've got to run now
+    - goodbye!
+    - i had fun speaking with you
+
+
+- intent: affirm
+  examples: |
+    - i think that's true
+    - that is accurate
+    - yes, that is it
+    - correct
+    - the answer is yes
+    - all right
+    - it's indeed true
+    - that's a yes from me
+    - yes you are correct
+    - that's a definite yes
+    - yes that's it
+    - i vote yes
+    - that is correct
+    - you got it
+    - yeah that's right, so true
+    - uh-huh
+    - correct, that's true
+    - yes, that's correct
+    - yeah
+    - ok
+    - sure thing
+    - yes you are right
+    - yes i do like that
+    - yes that is correct
+    - i think it's true
+
+- intent: deny
+  examples: |
+    - please, no
+    - not that
+    - definitely not
+    - i would have to say the answer to that is no
+    - i say no to that question
+    - no, that is my response
+    - i don't believe that is possible, it is false
+    - i would say that the statement is definitely false
+    - i am afraid that that is not the case
+    - no, that information is wrong
+    - that is a completely false statement
+    - that would be a no
+    - i do not think that is true, so i would say it is a false statement
+    - incorrect, it is certainly a false statement
+    - i do not believe that that is correct
+    - the answer is definitely no
+    - sorry, that is not true
+    - that's a negative
+    - no!
+    - that's not right
+    - no, don't do that
+    - i don't like that, no
+    - no, this is not possible
+    - i deny it
+    - not possible
+

@@ -1,0 +1,241 @@
+version: "3.1"
+
+nlu:
+- intent: branch_address
+  examples: |
+    - Where is the branch located?
+    - Please tell me the nearest branch of the bank
+    - Branch Address
+    - where is the branch?
+    - Can you send me the Google Maps link for the branch?
+    - Where is the branch in [specific neighborhood]?
+    - What is the distance to the nearest bank branch?
+    - Which bank branch is the most convenient for me?
+    - Is there a branch close to the railway station?
+    - Where can I find a branch in [specific district]?
+    - Can I visit a bank branch near me right now?
+    - Show me directions to my bank’s closest branch.
+    - I need to visit a branch. Where should I go?
+    - Where is the nearest bank branch with customer support?
+    - Please share the nearest branch’s complete address.
+    - I need to go to the closest bank for a transaction.
+    - Where can I get in-person help at a bank?
+    - Which branch is open in the evening near me?
+    - Can you suggest the best branch to visit nearby?
+    - Which branch of my bank is nearest to my location?
+    - Where can I meet a bank executive in person?
+    - Where is the nearest branch for loan-related queries?
+    - Help me find the nearest bank for depositing a cheque.
+    - Can you tell me where my bank’s closest branch is?
+    - I need to find a nearby branch for assistance.
+
+- intent: past_transactions
+  examples: |
+    - how much did i spend on lunches last week
+    - what amount did i spend last week
+    - what did i spend my money on last week
+    - how much did i spend on movies last week
+    - have i been spending a lot on groceries lately
+    - have i been spending a lot on shoes lately
+    - have i been spending a lot on food lately
+    - have i been spending a lot on alcohol lately
+    - have i been spending a lot on take out lately
+    - how much have i spent on shoes lately
+    - did i spend a lot on shoes recently
+    - how much have i spent on shoes
+    - have i have been spending a lot of money on shoes
+    - what is the total i spent on shoes recently
+    - what have i spent over the last few days
+    - how much have i spent recently
+    - how much money have i dropped recently
+    - how much money have i spent this month
+    - what's the amount of money i spent yesterday
+    - could you tell me how much i've spent over the past two weeks
+    - how much money have i spent this week
+    - could you tell me how much money i spent last week
+    - please tell me how much i have spent recently
+    - did i go out to eat more than usual
+    - have i been spending more money at restaurants
+
+- intent: dispatch_status
+  examples: |
+    - How can i track my card status?
+    - what is my credit card dispatch status
+    - I want to see my card dispatched
+    - debit card dispatch status
+    - Has my credit card been processed for dispatch?
+    - When will my new card reach me?
+    - Can you confirm if my card has left the bank?
+    - What’s the timeline for my credit card delivery?
+    - Is my credit card still being prepared for shipping?
+    - Will I get a call when my card is out for delivery?
+    - Has the courier picked up my credit card?
+    - Can I collect my credit card from the courier office?
+    - What’s the last update on my card shipment?
+    - My friend got their card already. Where’s mine?
+    - Can I change the delivery time for my credit card?
+    - Is there a way to speed up my credit card delivery?
+    - I got a dispatch notification. When will my card arrive?
+    - Can I request priority shipping for my credit card?
+    - How do I verify my delivery address for the card?
+    - Do you deliver credit cards on weekends?
+    - I’m traveling soon. Can I get my card faster?
+    - My card was dispatched a few days ago, but I haven’t received it yet.
+    - Do you require ID proof for receiving the card?
+    - What if my credit card gets lost in transit?
+    - I need my credit card urgently. Can you help?
+    - How long does it take for a dispatched card to reach me?
+    - Will my card be delivered by courier or regular mail?
+    - What happens if I’m not home when my card arrives?
+    - I applied for a credit card last week. Any updates on delivery?
+
+- intent: outstanding_balance
+  examples: |
+    - What is the remaining outstanding balance on my credit card?
+    - what is the outstanding balance on my credit card?
+    - I want to check my outstanding balance
+    - show me pending balance of my credit card
+    - How much do I owe on my credit card?
+    - Show me my current outstanding balance.
+    - What’s the due amount on my card?
+    - Can you check my pending credit card balance?
+    - Tell me my unpaid credit card bill.
+    - What’s left to be paid on my credit card?
+    - How much is my remaining credit card bill?
+    - Get me my latest outstanding balance.
+    - What’s the balance I need to clear?
+    - How much is still due on my card?
+    - Show my unpaid amount for the credit card.
+    - Do I have any pending payments on my card?
+    - What's my latest credit card balance status?
+    - Tell me how much I still need to pay on my card.
+    - How much is outstanding on my account?
+    - How much do I need to pay before the due date?
+    - How much is my total card liability as of today?
+    - Tell me my unpaid charges for this billing cycle.
+    - What’s the due balance on my card before late fees apply?
+    - How much of my previous statement is still unpaid?
+    - do i have outstanding balance??
+    
+- intent: card_issue
+  examples: |
+    - my card is unusable because it's damaged
+    - i cracked my card and need a replacement
+    - my card got melted and i need to report it
+    - my card is damaged so i can not use it
+    - report the card has been damaged
+    - i can not use my card, it is damaged
+    - the card is torn, let's report it
+    - report that the card has been wrecked
+    - my card is damaged and no longer function
+    - my card is damaged and unusable
+    - my card is wrecked, let's report it
+    - report the card has been torn
+    - i can not use my card since it is damaged
+    - i need to report a bent card
+    - my card split in half, can i report it
+    - i cracked my card, order a new one
+    - report that i split my card
+    - please make a report that my card is split
+    - the magnetic strip on my card is scratched, let the card company know
+    - i cut up the wrong card, please contact the bank and let them know
+    - i creased my card today, contact the bank
+    - my card is cracked, please tell the card company
+    - the dog chewed up my card, will you find out what it takes to get a replacement
+    - the plastic numbers on my card are falling off
+    - corner of my credit card is chipped off
+    
+
+- intent: ifsc_code
+  examples: |
+    - How to know my IFSC Code
+    - I want my IDSC code
+    - please generate IFSC code for me
+    - Can you fetch the IFSC Code for me?
+    - Tell me the IFSC Code of my bank.
+    - How do I find the IFSC Code for my branch?
+    - Could you provide the IFSC Code?
+    - Need help with the IFSC Code.
+    - Share the IFSC Code details.
+    - What’s the IFSC Code for my account?
+    - Help me with my bank’s IFSC Code.
+    - Where do I check the IFSC Code?
+    - IFSC Code details, please.
+    - I need the IFSC Code for my bank branch.
+    - Get me the IFSC Code for this bank.
+    - Looking for the IFSC Code of a bank branch.
+    - How to check IFSC Code?
+    - Show me the IFSC Code for my bank.
+    - Can you help me confirm a branch’s IFSC Code?
+    - Where can I search for an IFSC Code?
+    - Can I find my IFSC Code on my passbook?
+    - Tell me the IFSC Code for my nearest branch.
+    - How do I confirm a bank’s IFSC Code?
+    - What’s the correct IFSC Code for my transactions?
+    - I need the IFSC Code to complete my transfer.
+    - Where do I find my IFSC Code in my banking app?
+    - What’s the IFSC Code format?
+    - Can you look up an IFSC Code by city?
+    - How do I find my bank’s IFSC Code using Google?
+    - Can I find an IFSC Code using my debit card?
+    - Where is the IFSC Code on my bank’s website?
+    
+
+- intent: loan_query
+  examples: |
+    - How to apply for home loan
+    - I want to know about personal loan
+    - Perosnal Loan
+    - I have a uery regarding loan
+    - I need information about loan options
+    - What are the interest rates for personal loans?
+    - Tell me about home loan eligibility criteria
+    - I want to check my loan eligibility
+    - Can I apply for a loan online?
+    - What documents are required for a home loan?
+    - How much loan can I get?
+    - I want details about business loans
+    - Need assistance regarding loan application
+    - How can I check my loan status?
+    - What is the repayment tenure for a personal loan?
+    - I need a loan for home renovation
+    - Can I transfer my home loan to your bank?
+    - How to calculate EMI for a loan?
+    - Is there a prepayment penalty for personal loans?
+    - I want to apply for an education loan
+    - What are the processing fees for a loan?
+    - Can I get a loan against my fixed deposit?
+    - Explain the loan approval process
+    - I want to talk to a loan officer
+    - How do I negotiate my loan interest rate?
+    - Is there a penalty for late EMI payments?
+    
+
+- intent: balance_enquiry
+  examples: |
+    - check my visa account and see if i have enough money for dinner tonight
+    - is tehre enough in my bluebird account for groceries this week
+    - do i have enough in my sears account to buy a new dishwasher
+    - is there enough money in my discover account for a new pair of jeans
+    - what is the total of my bank accounts
+    - what is in my bank accounts
+    - what is the balance on my bank accounts
+    - what is remaining in my bank acccounts
+    - how much money is left in my bank accounts
+    - what amount of money is in my bank accounts
+    - what's the balance of my savings
+    - how much is in savings
+    - how much money is in my checking account
+    - whats the amount of money accumulated in my bank accounts
+    - whats my current bank savings
+    - how much total cash do i have in the bank
+    - whats my current checking balance
+    - can you tell me my current bank accounts balance
+    - whats the balance of my bank accounts
+    - what is my current balance on my home equity line of credit
+    - please find my balance on my chase mastercard
+    - can you tell me my checking account balance
+    - perform a search for my most recent balance on my amex account
+    - how much is the current balance in my td bank savings account
+
+    
